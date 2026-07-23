@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,96 +7,285 @@
 
 <style>
 
-body{
-background:#0d1117;
-color:white;
-font-family:Arial;
+*{
 margin:0;
 padding:0;
-text-align:center;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#0b1120;
+color:white;
 }
 
 .container{
-padding:80px 20px;
-}
-
-img{
-width:180px;
-height:180px;
-border-radius:50%;
-border:4px solid #00bfff;
-}
-
-h1{
-font-size:52px;
-margin:20px 0 10px;
-}
-
-h2{
-color:#00bfff;
-}
-
-p{
-font-size:20px;
-max-width:800px;
+width:90%;
+max-width:1200px;
 margin:auto;
-line-height:1.7;
 }
 
-.btn{
-display:inline-block;
-margin:15px;
-padding:15px 35px;
-background:#00bfff;
-color:white;
-text-decoration:none;
-border-radius:8px;
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 0;
+gap:60px;
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h1{
+font-size:58px;
+margin-bottom:10px;
+}
+
+.hero-text h2{
+color:#38bdf8;
+margin-bottom:20px;
+font-size:30px;
+}
+
+.hero-text p{
 font-size:18px;
-font-weight:bold;
+line-height:1.8;
+color:#d1d5db;
+margin-bottom:30px;
 }
 
-.btn:hover{
-background:#008ecc;
+.buttons a{
+display:inline-block;
+padding:15px 28px;
+margin-right:15px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.primary{
+background:#0ea5e9;
+color:white;
+}
+
+.secondary{
+border:2px solid #38bdf8;
+color:#38bdf8;
+}
+
+.primary:hover{
+background:#0284c7;
+}
+
+.secondary:hover{
+background:#38bdf8;
+color:white;
+}
+
+.hero-image{
+flex:1;
+text-align:center;
+}
+
+.hero-image img{
+width:280px;
+height:280px;
+border-radius:50%;
+border:5px solid #38bdf8;
+object-fit:cover;
+box-shadow:0 0 35px #0ea5e9;
+}
+
+section{
+padding:80px 0;
+}
+
+.title{
+font-size:38px;
+margin-bottom:40px;
+text-align:center;
+color:#38bdf8;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <div class="container">
 
+<section class="hero">
+
+<div class="hero-text">
+
 <h1>Poorna Chandra</h1>
 
 <h2>Aspiring Data Analyst</h2>
 
 <p>
-Passionate about Data Analytics using Excel, SQL, Python and Power BI.
-I build interactive dashboards and transform raw data into meaningful business insights.
+Passionate about Data Analytics using Excel, SQL,
+Python and Power BI.
+I build interactive dashboards and transform raw
+data into meaningful business insights.
 </p>
 
-<br>
+<div class="buttons">
 
-<a class="btn"
+<a class="primary"
 href="https://www.linkedin.com/in/poorna-chandra-7a26482b1/"
-target="_blank">
+target="_blank">LinkedIn</a>
+
+<a class="secondary"
+href="https://github.com/Poornac2"
+target="_blank">GitHub</a>
+
+<a class="primary"
+href="https://raw.githubusercontent.com/Poornac2/Data-Analyst-Resume/main/Poorna_Chandra_Data_Analyst_Resume.pdf.pdf?download=1">
+Resume</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="WhatsApp Image 2026-07-21 at 9.12.51 PM">
+
+</div>
+  <section>
+
+<h2 class="title">About Me</h2>
+
+<p style="text-align:center;max-width:900px;margin:auto;font-size:18px;line-height:1.8;color:#d1d5db;">
+
+I am an aspiring Data Analyst with a strong interest in data visualization,
+business intelligence and dashboard development.
+I enjoy solving business problems using Excel, SQL, Python and Power BI.
+I have built multiple real-world dashboard projects using real datasets.
+
+</p>
+
+</section>
+
+<section>
+
+<h2 class="title">Skills</h2>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+
+<div class="primary">Microsoft Excel</div>
+
+<div class="primary">SQL</div>
+
+<div class="primary">Python</div>
+
+<div class="primary">Power BI</div>
+
+<div class="primary">Tableau</div>
+
+<div class="primary">Data Cleaning</div>
+
+<div class="primary">Dashboard Development</div>
+
+<div class="primary">Data Visualization</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Projects</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;">
+
+<div style="background:#111827;padding:25px;border-radius:15px;">
+<h3>Road Accident Analysis Dashboard</h3>
+<p>Built an interactive Excel dashboard to analyze accident trends, casualties, road types and vehicle categories.</p>
+</div>
+
+<div style="background:#111827;padding:25px;border-radius:15px;">
+<h3>HR Analytics Dashboard</h3>
+<p>Developed an HR dashboard to analyze employee attrition, departments, salary and workforce insights.</p>
+</div>
+
+<div style="background:#111827;padding:25px;border-radius:15px;">
+<h3>Swiggy Sales Dashboard</h3>
+<p>Created an Excel dashboard to analyze sales performance, top restaurants, customers and order trends.</p>
+</div>
+
+<div style="background:#111827;padding:25px;border-radius:15px;">
+<h3>Blinkit Sales Dashboard</h3>
+<p>Designed a dashboard showing sales, outlet performance, product categories and customer insights.</p>
+</div>
+
+</div>
+
+</section>
+  <section>
+
+<h2 class="title">Education</h2>
+
+<p style="text-align:center;font-size:18px;color:#d1d5db;">
+B.Tech in Computer Science & Engineering<br>
+Annamacharya Institute of Technology & Sciences<br>
+CGPA: 7.79
+</p>
+
+</section>
+
+<section>
+
+<h2 class="title">Certifications</h2>
+
+<div style="max-width:800px;margin:auto;line-height:2;font-size:18px;color:#d1d5db;">
+
+✔ Data Analytics Internship – Rooman Technologies Pvt. Ltd.<br>
+✔ Excel Dashboard Projects<br>
+✔ SQL Fundamentals<br>
+✔ Power BI Fundamentals<br>
+✔ Python for Data Analytics
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Contact</h2>
+
+<div style="text-align:center;line-height:2;font-size:18px;">
+
+<p>📧 Email: poornac807@gmail.com</p>
+
+<p>
+<a href="https://www.linkedin.com/in/poorna-chandra-7a26482b1/" target="_blank" style="color:#38bdf8;">
 LinkedIn
 </a>
+</p>
 
-<a class="btn"
-href="https://github.com/Poornac2"
-target="_blank">
+<p>
+<a href="https://github.com/Poornac2" target="_blank" style="color:#38bdf8;">
 GitHub
 </a>
+</p>
 
-<a class="btn"
-href="https://raw.githubusercontent.com/Poornac2/Data-Analyst-Resume/main/Poorna_Chandra_Data_Analyst_Resume.pdf.pdf?download=1">
-Download Resume
-</a>
+</div>
+
+</section>
+
+<footer style="padding:40px 0;text-align:center;color:#94a3b8;border-top:1px solid #1e293b;margin-top:50px;">
+
+© 2026 Poorna Chandra | Data Analyst Portfolio
+
+</footer>
 
 </div>
 
 </body>
 
 </html>
+
+</section>
